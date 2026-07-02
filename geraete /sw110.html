@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>SW110 - MikroTik CRS312</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<header>
+		<h1>SW110 - MikroTik CRS312</h1>
+	</header>
 
+	<main>
+		<a class="backlink" href="../raeume/keller.html">← Zurück zur Kellerübersicht</a>
+
+		<h2>Grunddaten</h2>
+		<table>
+			<tr>
+				<th>Feld</th>
+				<th>Wert</th>
+			</tr>
+			<tr>
+				<td>Standort</td>
+				<td>Keller</td>
+			</tr>
+			<tr>
+				<td>Gerätename</td>
+				<td>SW110</td>
+			</tr>
+			<tr>
+				<td>Produkt</td>
+				<td>MikroTik CRS312</td>
+			</tr>
+			<tr>
+				<td>Funktion</td>
+				<td>10G Core / Bridge Switch</td>
+			</tr>
+		</table>
+
+		<h2>Management</h2>
+		<table>
+			<tr>
+				<th>Feld</th>
+				<th>Wert</th>
+			</tr>
+			<tr>
+				<td>Management-IP</td>
+				<td>10.250.10.10</td>
+			</tr>
+			<tr>
+				<td>Subnetzmaske</td>
+				<td>255.255.255.0</td>
+			</tr>
+			<tr>
+				<td>SNMP-Version</td>
+				<td>SNMPv3</td>
+			</tr>
+			<tr>
+				<td>SNMP Community / User</td>
+				<td>monitoring-readonly</td>
+			</tr>
+		</table>
+
+		<h2>Ports</h2>
+		<table>
+			<tr>
+				<th>Port</th>
+				<th>Ziel</th>
+				<th>VLAN</th>
+				<th>Bemerkung</th>
+			</tr>
+			<tr>
+				<td>ether1</td>
+				<td>Provider Bridge</td>
+				<td>WAN / Transit</td>
+				<td>Uplink</td>
+			</tr>
+			<tr>
+				<td>ether2</td>
+				<td>FW110</td>
+				<td>Transit</td>
+				<td>Firewall-Verbindung</td>
+			</tr>
+			<tr>
+				<td>sfp-sfpplus1</td>
+				<td>SW130</td>
+				<td>Trunk</td>
+				<td>Glasfaser-Uplink</td>
+			</tr>
+		</table>
+	</main>
+</body>
+</html>
